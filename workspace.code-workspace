@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "spellselect",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "spellselect"
+	}
+}

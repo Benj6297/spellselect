@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.2.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>D&D</title>
+  </head>
+
+
+  <body class="bg-base-300 h-screen">
+    <main>
+      <!-- Cards  -->
+        <div class="flex justify-evenly pt-12 h-[500px]">
+          <!-- Class Selection Card -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <!-- Card Image -->
+        
+            <figure class="relative overflow-hidden">
+              <img class="object-cover h-1/2" src="/media/img1.jpeg" alt="Shoes" />
+            </figure>
+            <!-- Card Body -->
+            <div class="card-body">
+              <b class="text-lg card-title">Hello Weary Traveler</b>
+              <b class="">Select your class:</b>
+        
+              <!-- Option Selection -->
+              <select class="select" id="character-class"></select>
+            </div>
+          </div>
+        
+          <!-- Race Selection Card -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <!-- Card Image -->
+            <figure class="relative overflow-hidden">
+              <img src="/media/img3.jpeg" class="" alt="Spell Class" />
+            </figure>
+            <!-- Card Body -->
+            <div class="card-body">
+              <b class="text-lg">Superb Job!</b>
+              <b class="">Now select your race:</b>
+              <!-- Race Option Selection -->
+              <select class="select" id="race"></select>
+            </div>
+          </div>
+        
+          <!-- Spell Selection Card -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="relative overflow-hidden bg-black flex">
+              <img src="/media/img2.jpeg" class="object-cover" alt="Spells" />
+            </figure>
+            <div class="card-body">
+              <b class="text-lg">Almost time to head to the pub</b>
+              <b class="">Select three level 1 spells:</b>
+              <select class="select" id="spells"></select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="overflow-x-auto px-52 py-10">
+          <table class="table w-full">
+            <!-- head -->
+            <thead>
+              <tr>
+                <th></th>
+                <th>Class</th>
+                <th>Race</th>
+                <th>Spell</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- row 1 -->
+              <tr>
+                <th>Character:</th>
+                <td id="td-class"></td>
+                <td id="td-race"></td>
+                <td id="td-spell"></td>
+              </tr>            
+            </tbody>
+          </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
